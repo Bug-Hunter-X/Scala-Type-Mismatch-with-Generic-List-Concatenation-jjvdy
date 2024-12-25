@@ -1,0 +1,4 @@
+# Scala Type Mismatch with Generic List Concatenation
+This example demonstrates a common type mismatch error in Scala when working with generic classes and lists. The error occurs because the ++ operator requires both lists to have the same type parameter. Attempting to concatenate `List[Int]` with `List[String]` directly results in a compile-time error. 
+
+The solution involves either using a type parameter that encompasses both `Int` and `String` (e.g., `Any`) or employing a different approach to combine lists of different types. This is particularly important when dealing with collections within generic types.
